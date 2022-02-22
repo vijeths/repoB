@@ -1,0 +1,15 @@
+name: Check for push
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: script
+        run: |
+             echo "Hey this is 2nd workflow triggered by repoA"
