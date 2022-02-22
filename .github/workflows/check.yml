@@ -1,8 +1,8 @@
 name: Check for push
 on:
   push:
-    branches: [ master ]
-  workflow_dispatch:
+    branches: [ main ]
+
 
 jobs:
   build:
