@@ -4,7 +4,8 @@ on:
   push:
     branches: [ main ]
   repository_dispatch:
-    types: [my-event(triggered by repo A),my-event(triggered by repo C)]
+    #types: [my-event(triggered by repoA),my-event(triggered by repoC)]
+    #types: [my-event(triggered by ${{ github.repository }}]
       
 
 
