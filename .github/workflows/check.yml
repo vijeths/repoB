@@ -4,7 +4,8 @@ on:
   push:
     branches: [ main ]
   repository_dispatch:
-    types: [my-event(triggered by repo A)]
+    types: [my-event(triggered by repo A),my-event(triggered by repo C)]
+      
 
 
 jobs:
@@ -23,5 +24,5 @@ jobs:
       
       - name: script
         run: |
-             echo "Hey this is 2nd workflow triggered by repoA"
+             echo "Hey this is 2nd workflow triggered by "
              
