@@ -10,13 +10,13 @@ on:
 
 jobs:
 
-  myEvent:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          ref: ${{ github.event.client_payload.ref }}
-      - run: echo ${{ github.event.client_payload.sha }}
+#   myEvent:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#         with:
+#           ref: ${{ github.event.client_payload.ref }}
+#       - run: echo ${{ github.event.client_payload.sha }}
   build:
     runs-on: ubuntu-latest
     steps:
@@ -24,5 +24,6 @@ jobs:
       
       - name: script
         run: |
-             echo "Hey this is 2nd workflow triggered by "
+             echo "Hey this is 2nd workflow  "
+             echo "Add build steps"
              
